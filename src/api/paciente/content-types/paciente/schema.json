@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pacientes",
+  "info": {
+    "singularName": "paciente",
+    "pluralName": "pacientes",
+    "displayName": "paciente"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "telefone": {
+      "type": "biginteger"
+    },
+    "data_de_nascimento": {
+      "type": "date"
+    },
+    "altura": {
+      "type": "integer"
+    },
+    "peso": {
+      "type": "integer"
+    }
+  }
+}
