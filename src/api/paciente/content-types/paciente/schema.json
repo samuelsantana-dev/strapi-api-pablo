@@ -4,29 +4,36 @@
   "info": {
     "singularName": "paciente",
     "pluralName": "pacientes",
-    "displayName": "paciente"
+    "displayName": "paciente",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "Nome": {
+    "name": {
       "type": "string"
     },
     "email": {
       "type": "email"
     },
-    "telefone": {
+    "phone": {
       "type": "biginteger"
     },
-    "data_de_nascimento": {
+    "birthdate": {
       "type": "date"
     },
-    "altura": {
+    "height": {
+      "type": "decimal"
+    },
+    "weight": {
       "type": "integer"
     },
-    "peso": {
+    "age": {
       "type": "integer"
+    },
+    "cpf": {
+      "type": "biginteger"
     }
   }
 }

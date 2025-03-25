@@ -537,6 +537,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
 export interface ApiPacientePaciente extends Struct.CollectionTypeSchema {
   collectionName: 'pacientes';
   info: {
+    description: '';
     displayName: 'paciente';
     pluralName: 'pacientes';
     singularName: 'paciente';
@@ -545,25 +546,27 @@ export interface ApiPacientePaciente extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    altura: Schema.Attribute.Integer;
+    age: Schema.Attribute.Integer;
+    birthdate: Schema.Attribute.Date;
+    cpf: Schema.Attribute.BigInteger;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    data_de_nascimento: Schema.Attribute.Date;
     email: Schema.Attribute.Email;
+    height: Schema.Attribute.Decimal;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::paciente.paciente'
     > &
       Schema.Attribute.Private;
-    Nome: Schema.Attribute.String;
-    peso: Schema.Attribute.Integer;
+    name: Schema.Attribute.String;
+    phone: Schema.Attribute.BigInteger;
     publishedAt: Schema.Attribute.DateTime;
-    telefone: Schema.Attribute.BigInteger;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    weight: Schema.Attribute.Integer;
   };
 }
 
