@@ -22,6 +22,7 @@ export default ({ env }) => {
       },
       pool: { min: env.int('DATABASE_POOL_MIN', 2), max: env.int('DATABASE_POOL_MAX', 10) },
     },
+    //postgresql://postgres:[YOUR-PASSWORD]@db.xfjlhbyhjkjlzdhpmuwj.supabase.co:5432/postgres
     postgres: {
       connection: {
         connectionString: env('DATABASE_URL'),
