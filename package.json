@@ -37,7 +37,7 @@
     "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"
   },
-  "strapi": {
+  "strapi": { 
     "uuid": "1eec8867-b87c-42cc-ac89-5a53ac768d6c"
   }
 }
